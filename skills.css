@@ -2,6 +2,14 @@
     height: 140vh;
 }
 
+/* for Mobile */
+
+@media only screen and (max-width: 768px) {
+    #Skills {
+        height: 160vh;
+    }
+}
+
 #Skills h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 32px;
