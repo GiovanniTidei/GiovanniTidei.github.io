@@ -1,0 +1,133 @@
+footer {
+    z-index: 100;
+}
+
+
+/* for Mobile */
+
+@media only screen and (max-width: 768px) {
+    footer {
+        height: 105px;
+    }
+}
+
+
+/* styling header*/
+
+.headSocial {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 80px;
+    position: fixed;
+    top: 90%;
+    left: 7%;
+    z-index: 5;
+    padding: 0 20px;
+    color: black
+}
+
+
+/* for Mobile */
+
+@media only screen and (max-width: 768px) {
+    .headSocial {
+        left: 25%;
+    }
+}
+
+.headSocial .btn-svg {
+    transform: translateX(-100px);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+/* styling social media links*/
+
+.headSocial .social {
+    display: flex;
+    position: relative;
+    transform: translateX(-20px);
+    padding: 20px;
+}
+
+.headSocial .social a {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    transition: all 1s ease;
+    opacity: 0;
+}
+
+.headSocial .btn-svg:hover .social a:nth-child(1) {
+    left: -20px;
+    opacity: 1;
+}
+
+.headSocial .btn-svg:hover .social a:nth-child(1):hover {
+    border: 1px solid #00bfa5;
+}
+
+.headSocial .btn-svg:hover .social a:nth-child(2) {
+    left: -70px;
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+
+.headSocial .btn-svg:hover .social a:nth-child(2):hover {
+    border: 1px solid #0e76a8;
+}
+
+.headSocial .btn-svg:hover .social a:nth-child(3) {
+    left: -120px;
+    opacity: 1;
+    transition-delay: 0.4s;
+}
+
+.headSocial .btn-svg:hover .social a:nth-child(3):hover {
+    border: 1px solid #c71610;
+}
+
+.headSocial .btn-svg:hover .social a:nth-child(4) {
+    left: -170px;
+    opacity: 1;
+    transition-delay: 0.6s;
+}
+
+.headSocial .btn-svg:hover .social a:nth-child(4):hover {
+    border: 1px solid #0bcf0b;
+}
+
+
+/* hover color custom Social */
+
+#whatsapp:hover {
+    color: #00bfa5;
+    text-decoration: none;
+}
+
+#linkedin:hover {
+    color: #0e76a8;
+    text-decoration: none;
+}
+
+#enveloppe:hover {
+    color: #c71610;
+    text-decoration: none;
+}
+
+#phone:hover {
+    color: #0bcf0b;
+    text-decoration: none;
+}
