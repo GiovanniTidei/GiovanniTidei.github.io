@@ -1,13 +1,6 @@
 /* TIMELINE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-/* for Mobile */
-
-@media only screen and (max-width: 768px) {
-    #TimelineCv {
-        margin-top: 50px;
-    }
-}
 
 .timeline ul {
     background: #eee;
