@@ -1,8 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,100);
 @import url(https://use.fontawesome.com/releases/v5.0.10/css/all.css);
-html {
-    scroll-behavior: smooth;
-}
+
 
 body {
     background-color: #eee;
