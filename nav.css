@@ -40,14 +40,15 @@
 
 .menu ul {
     list-style-type: none;
-    /* for Mobile */
+}
+
+
+/* for Mobile */
 
 @media only screen and (max-width: 768px) {
     .menu ul {
         margin-right: 10%;
     }
-}
-
 }
 
 .menu ul li {
