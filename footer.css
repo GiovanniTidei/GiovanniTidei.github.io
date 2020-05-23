@@ -68,6 +68,7 @@ footer {
     left: 15px;
     transition: all 1s ease;
     opacity: 0;
+    background-color: #eee;
 }
 
 .headSocial .btn-svg:hover .social a:nth-child(1) {
