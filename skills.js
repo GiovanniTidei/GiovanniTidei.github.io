@@ -1,4 +1,4 @@
-var triggerAtY = $('#Skills').offset().top - $(window).outerHeight();
+var triggerAtY = $('#startProgress').offset().top - $(window).outerHeight();
 
 $(window).scroll(function(event) {
     // #target not yet in view
@@ -22,19 +22,19 @@ $(window).scroll(function(event) {
         }
     });
 
-    // remove this event handler
-    $(this).off(event);
-})
+    //     // remove this event handler
+    //     $(this).off(event);
+    // })
 
 
 
-var triggerAtY = $('#Skills').offset().top - $(window).outerHeight();
+    // var triggerAtY = $('#Skills').offset().top - $(window).outerHeight();
 
-$(window).scroll(function(event) {
-    // #target not yet in view
-    if (triggerAtY > $(window).scrollTop()) {
-        return;
-    }
+    // $(window).scroll(function(event) {
+    //     // #target not yet in view
+    //     if (triggerAtY > $(window).scrollTop()) {
+    //         return;
+    //     }
 
 
     $(window).one('scroll', function update() {
@@ -52,18 +52,18 @@ $(window).scroll(function(event) {
         }
     });
 
-    // remove this event handler
-    $(this).off(event);
-})
+    //     // remove this event handler
+    //     $(this).off(event);
+    // })
 
 
-var triggerAtY = $('#Skills').offset().top - $(window).outerHeight();
+    // var triggerAtY = $('#Skills').offset().top - $(window).outerHeight();
 
-$(window).scroll(function(event) {
-    // #target not yet in view
-    if (triggerAtY > $(window).scrollTop()) {
-        return;
-    }
+    // $(window).scroll(function(event) {
+    //     // #target not yet in view
+    //     if (triggerAtY > $(window).scrollTop()) {
+    //         return;
+    //     }
 
 
     $(window).one('scroll', function update() {
@@ -81,18 +81,18 @@ $(window).scroll(function(event) {
         }
     });
 
-    // remove this event handler
-    $(this).off(event);
-})
+    //     // remove this event handler
+    //     $(this).off(event);
+    // })
 
 
-var triggerAtY = $('#Skills').offset().top - $(window).outerHeight();
+    // var triggerAtY = $('#Skills').offset().top - $(window).outerHeight();
 
-$(window).scroll(function(event) {
-    // #target not yet in view
-    if (triggerAtY > $(window).scrollTop()) {
-        return;
-    }
+    // $(window).scroll(function(event) {
+    //     // #target not yet in view
+    //     if (triggerAtY > $(window).scrollTop()) {
+    //         return;
+    //     }
 
 
     $(window).one('scroll', function update() {
@@ -110,18 +110,18 @@ $(window).scroll(function(event) {
         }
     });
 
-    // remove this event handler
-    $(this).off(event);
-})
+    //     // remove this event handler
+    //     $(this).off(event);
+    // })
 
 
-var triggerAtY = $('#Skills').offset().top - $(window).outerHeight();
+    // var triggerAtY = $('#Skills').offset().top - $(window).outerHeight();
 
-$(window).scroll(function(event) {
-    // #target not yet in view
-    if (triggerAtY > $(window).scrollTop()) {
-        return;
-    }
+    // $(window).scroll(function(event) {
+    //     // #target not yet in view
+    //     if (triggerAtY > $(window).scrollTop()) {
+    //         return;
+    //     }
 
 
     $(window).one('scroll', function update() {
@@ -139,18 +139,18 @@ $(window).scroll(function(event) {
         }
     });
 
-    // remove this event handler
-    $(this).off(event);
-})
+    //     // remove this event handler
+    //     $(this).off(event);
+    // })
 
 
-var triggerAtY = $('#Skills').offset().top - $(window).outerHeight();
+    // var triggerAtY = $('#Skills').offset().top - $(window).outerHeight();
 
-$(window).scroll(function(event) {
-    // #target not yet in view
-    if (triggerAtY > $(window).scrollTop()) {
-        return;
-    }
+    // $(window).scroll(function(event) {
+    //     // #target not yet in view
+    //     if (triggerAtY > $(window).scrollTop()) {
+    //         return;
+    //     }
 
 
     $(window).one('scroll', function update() {
@@ -168,18 +168,18 @@ $(window).scroll(function(event) {
         }
     });
 
-    // remove this event handler
-    $(this).off(event);
-})
+    //     // remove this event handler
+    //     $(this).off(event);
+    // })
 
 
-var triggerAtY = $('#Skills').offset().top - $(window).outerHeight();
+    // var triggerAtY = $('#Skills').offset().top - $(window).outerHeight();
 
-$(window).scroll(function(event) {
-    // #target not yet in view
-    if (triggerAtY > $(window).scrollTop()) {
-        return;
-    }
+    // $(window).scroll(function(event) {
+    //     // #target not yet in view
+    //     if (triggerAtY > $(window).scrollTop()) {
+    //         return;
+    //     }
 
 
     $(window).one('scroll', function update() {
@@ -198,17 +198,18 @@ $(window).scroll(function(event) {
     });
 
     // remove this event handler
-    $(this).off(event);
-})
+
+    //     $(this).off(event);
+    // })
 
 
-var triggerAtY = $('#Skills').offset().top - $(window).outerHeight();
+    // var triggerAtY = $('#Skills').offset().top - $(window).outerHeight();
 
-$(window).scroll(function(event) {
-    // #target not yet in view
-    if (triggerAtY > $(window).scrollTop()) {
-        return;
-    }
+    // $(window).scroll(function(event) {
+    //     // #target not yet in view
+    //     if (triggerAtY > $(window).scrollTop()) {
+    //         return;
+    //     }
 
 
     $(window).one('scroll', function update() {
@@ -360,13 +361,8 @@ $(window).one('scroll', function update() {
 });
 
 
-
-
-
-
-
 /*FINE Linear progess barr*/
 
-$(window).one('scroll', function() {
+// $(window).one('scroll', function() {
 
-});
+// });
