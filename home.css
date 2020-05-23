@@ -36,6 +36,8 @@
 
 /*---Arrow button----*/
 
+/*-
+
 .load-more {
     position: absolute;
     display: block;
@@ -96,7 +98,7 @@
     margin-top: 0;
     transform: translate(-50%, -50%) rotate(135deg) rotateY(180deg);
 }
-
+-*/
 
 /* for Mobile */
 
@@ -135,6 +137,8 @@
 
 
 /* The bar */
+
+/*
 
 .bar {
     position: absolute;
@@ -225,3 +229,5 @@
         transform: rotateZ(0) rotateX(0);
     }
 }
+
+ */
