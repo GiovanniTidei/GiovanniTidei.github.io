@@ -20,6 +20,14 @@
     font-weight: 300;
 }
 
+/* for Mobile */
+
+@media only screen and (max-width: 768px) {
+    .home h1 {
+        margin-bottom: 75px;
+    }
+}
+
 .home h2 {
     font-size: 42px;
     font-weight: 100;
