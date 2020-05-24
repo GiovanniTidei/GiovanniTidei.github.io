@@ -113,7 +113,7 @@ time {
 
 @media only screen and (max-width: 768px) {
     .timeline ul li:nth-child(odd) div {
-        transform: translate3d(0, 0, 0);
+        transform: translate3d(-200px, 0, 0);
     }
 }
 
