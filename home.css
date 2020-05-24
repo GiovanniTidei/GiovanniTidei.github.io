@@ -34,7 +34,7 @@
 }
 
 
-/*---Arrow button----*/
+/*---Arrow button----
 
 .load-more {
     position: absolute;
@@ -109,9 +109,7 @@
     transform: translate(-50%, -50%) rotate(135deg) rotateY(180deg);
 }
 
+*/
 
-/* for Mobile */
 
-@media only screen and (max-width: 768px) {
-    .illo {}
-}
+
