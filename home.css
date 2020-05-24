@@ -43,7 +43,7 @@
     width: 40px;
     height: 40px;
     top: 80%;
-    left: 49.5%;
+    left: 50%;
     margin: -20px 0 0 -20px;
 }
 
@@ -54,6 +54,7 @@
     .load-more {
         top: 90%;
         z-index: 999;
+         left: 53%;
     }
 }
 
