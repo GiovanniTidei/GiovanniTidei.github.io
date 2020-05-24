@@ -45,6 +45,7 @@
     top: 80%;
     left: 50%;
     margin: -20px 0 0 -20px;
+    
 }
 
 
@@ -52,7 +53,7 @@
 
 @media only screen and (max-width: 768px) {
     .load-more {
-        top: 85%;
+        top: 82%;
         z-index: 999;
          left: 53%;
     }
