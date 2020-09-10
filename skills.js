@@ -227,6 +227,37 @@ $(window).scroll(function(event) {
         }
     });
 
+
+    $(window).one('scroll', function update() {
+        var element = document.getElementById("myprogressBar9");
+        var width = 1;
+        var identity = setInterval(scene, 10);
+
+        function scene() {
+            if (width >= 50) {
+                clearInterval(identity);
+            } else {
+                width++;
+                element.style.width = width + '%';
+            }
+        }
+    });
+
+    $(window).one('scroll', function update() {
+        var element = document.getElementById("myprogressBar10");
+        var width = 1;
+        var identity = setInterval(scene, 10);
+
+        function scene() {
+            if (width >= 70) {
+                clearInterval(identity);
+            } else {
+                width++;
+                element.style.width = width + '%';
+            }
+        }
+    });
+
     // remove this event handler
     $(this).off(event);
 })

@@ -8,7 +8,7 @@
 
 @media only screen and (max-width: 768px) {
     #Skills {
-       margin-bottom: 25%;
+        margin-bottom: 25%;
     }
 }
 
@@ -38,77 +38,17 @@
     box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;
 }
 
-#myprogressBar {
-    width: 1%;
-    height: 20px;
-    background-color: #005db7;
-    border-radius: 10px;
-    text-align: center;
-    line-height: 32px;
-    color: black;
-}
-
-#myprogressBar2 {
-    width: 1%;
-    height: 20px;
-    background-color: #005db7;
-    text-align: center;
-    line-height: 32px;
-    color: black;
-    border-radius: 10px;
-}
-
-#myprogressBar3 {
-    width: 1%;
-    height: 20px;
-    background-color: #005db7;
-    text-align: center;
-    line-height: 32px;
-    color: black;
-    border-radius: 10px;
-}
-
-#myprogressBar4 {
-    width: 1%;
-    height: 20px;
-    background-color: #005db7;
-    text-align: center;
-    line-height: 32px;
-    color: black;
-    border-radius: 10px;
-}
-
-#myprogressBar5 {
-    width: 1%;
-    height: 20px;
-    background-color: #005db7;
-    text-align: center;
-    line-height: 32px;
-    color: black;
-    border-radius: 10px;
-}
-
-#myprogressBar6 {
-    width: 1%;
-    height: 20px;
-    background-color: #005db7;
-    text-align: center;
-    line-height: 32px;
-    color: black;
-    border-radius: 10px;
-}
-
-#myprogressBar7 {
-    width: 1%;
-    height: 20px;
-    background-color: #005db7;
-    text-align: center;
-    line-height: 32px;
-    color: black;
-    border-radius: 10px;
-}
-
-#myprogressBar8 {
+#myprogressBar,
+#myprogressBar1,
+#myprogressBar2,
+#myprogressBar3,
+#myprogressBar4,
+#myprogressBar5,
+#myprogressBar6,
+#myprogressBar7,
+#myprogressBar8,
+#myprogressBar9,
+#myprogressBar10 {
     width: 1%;
     height: 20px;
     background-color: #005db7;
