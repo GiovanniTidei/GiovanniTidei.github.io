@@ -1,11 +1,261 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giovanni Tidei</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .section {
+      display: none;
+      min-height: calc(100vh - 4rem);
+      padding: 2rem 0;
+    }
+    .section.active {
+      display: block;
+      animation: fadeIn 0.5s ease-out;
+    }
+
+    .nav-highlight {
+      position: relative;
+      transition: all 0.3s ease;
+    }
+    .nav-highlight::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 2px;
+      background: currentColor;
+      transition: width 0.3s ease;
+    }
+    .nav-highlight:hover::after,
+    .nav-highlight.active::after {
+      width: 100%;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
-<body>
-    
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <!-- Fixed Navigation -->
+  <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+    <div class="container mx-auto px-4">
+      <nav class="flex justify-between items-center h-16">
+        <div class="text-xl font-bold text-blue-500">GT</div>
+        <a href="#" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full shadow hover:shadow-md transition-all flex items-center">
+          <i class="fas fa-download mr-2"></i> CV
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-20 pb-20">
+    <!-- About Section (Default) -->
+    <section id="about" class="section active">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4"><span class="text-blue-500">Giovanni Tidei</span></h1>
+            <h2 class="text-2xl md:text-3xl text-gray-600 mb-6">Teacher & Web Developer</h2>
+            <p class="text-lg text-gray-600 mb-8">I am a high school teacher with a strong passion for web development since 2020. While my academic background is in humanities, I’ve dedicated myself to mastering modern web technologies with a focus on fluid user interfaces, responsive design, and clean code. My approach blends logical thinking from philosophy with the creativity of front-end development.
+               <br>I’m deeply fascinated by how technology bridges ideas and users, and I continuously explore new tools and frameworks to create intuitive digital experiences.</p>
+            
+            <div class="mb-8">
+              <h4 class="font-semibold mb-4">Le mie competenze:</h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full">Javascript</span>
+                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full">TypeScript</span>
+                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full">React</span>
+                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full">Bootstrap</span>
+                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full">Tailwind</span>
+                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full">Node.js</span>
+                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full">SQL</span>
+              </div>
+            </div>
+          </div>
+          <div class="hidden md:flex justify-center">
+            <img src="assets/io.png" alt="Profile" class="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover shadow-xl">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-12 text-center">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+          <!-- Project 1 -->
+          <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all transform hover:-translate-y-2">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Interactive Rome's Map</h3>
+              <p class="text-gray-600 mb-4">A multilingual web app mapping Rome’s key cultural landmarks</p>
+              
+              <!-- Immagine con bordo -->
+              <div class="mb-4 border-2 border-blue-200 rounded-lg overflow-hidden">
+                  <img 
+                      src="assets/Map.webp" 
+                      alt="Roma" 
+                      class="w-full h-48 object-cover"
+                  >
+              </div>
+
+              <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="text-xs px-2 py-1 bg-gray-100 rounded">Javascript</span>
+                  <span class="text-xs px-2 py-1 bg-gray-100 rounded">OpenStreetMap</span>
+              </div>
+              <a href="https://giovannitidei.github.io/RomaSecretsMap/" class="text-blue-500 hover:text-blue-700 font-medium inline-flex items-center">
+                  Go <i class="fas fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+
+           <!-- Project 2 -->
+           <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all transform hover:-translate-y-2">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Portfolio Artist</h3>
+              <p class="text-gray-600 mb-4">Minimalist gallery for a young Roman photographer</p>
+              
+              <!-- Immagine con bordo -->
+              <div class="mb-4 border-2 border-blue-200 rounded-lg overflow-hidden">
+                  <img 
+                      src="assets/PortfolioArtist.webp" 
+                      alt="Portfolio Artist Preview" 
+                      class="w-full h-48 object-cover"
+                  >
+              </div>
+
+              <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="text-xs px-2 py-1 bg-gray-100 rounded">Javascript</span>
+                  <span class="text-xs px-2 py-1 bg-gray-100 rounded">Bootstrap</span>
+              </div>
+              <a href="https://giuliagaffi.github.io/" class="text-blue-500 hover:text-blue-700 font-medium inline-flex items-center">
+                  Go <i class="fas fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-16 text-center">Contact</h2>
+        <div class="max-w-md mx-auto flex flex-col items-center space-y-16">
+          <!-- Phone -->
+          <a href="tel:3345044443" class="flex items-center space-x-4 text-gray-600 hover:text-blue-500 transition-all group">
+            <div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full group-hover:bg-blue-200 transition-all">
+              <i class="fas fa-phone text-2xl"></i>
+            </div>
+            
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:jovanni.tidei@gmail.com" class="flex items-center space-x-4 text-gray-600 hover:text-blue-500 transition-all group">
+            <div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full group-hover:bg-blue-200 transition-all">
+              <i class="fas fa-envelope text-2xl"></i>
+            </div>
+            
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/giovanni-tidei/" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-4 text-gray-600 hover:text-blue-500 transition-all group">
+            <div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full group-hover:bg-blue-200 transition-all">
+              <i class="fab fa-linkedin-in text-2xl"></i>
+            </div>
+            
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sostituisci il footer esistente con questo -->
+  <footer class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 z-40 py-3">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-3 gap-4 w-full">
+        <a href="#about" class="flex flex-col items-center text-gray-600 hover:text-blue-500 transition-all" data-section-link="about">
+          <i class="fas fa-user text-lg mb-1"></i>
+          <span class="text-xs">About</span>
+        </a>
+        <a href="#projects" class="flex flex-col items-center text-gray-600 hover:text-blue-500 transition-all" data-section-link="projects">
+          <i class="fas fa-code text-lg mb-1"></i>
+          <span class="text-xs">Projects</span>
+        </a>
+        <a href="#contact" class="flex flex-col items-center text-gray-600 hover:text-blue-500 transition-all" data-section-link="contact">
+          <i class="fas fa-envelope text-lg mb-1"></i>
+          <span class="text-xs">Contact</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Section management
+      const sections = document.querySelectorAll('.section');
+      const navLinks = document.querySelectorAll('[data-section], [data-section-link]');
+      
+      function showSection(sectionId) {
+        // Hide all sections
+        sections.forEach(section => {
+          section.classList.remove('active');
+        });
+        
+        // Show the selected section
+        document.getElementById(sectionId).classList.add('active');
+        
+        // Scroll to top smoothly
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+        
+        // Update active navigation link
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          const linkSection = link.getAttribute('data-section') || link.getAttribute('data-section-link');
+          if (linkSection === sectionId) {
+            link.classList.add('active');
+          }
+        });
+      }
+      
+      // Set up click handlers for all navigation links
+      navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const sectionId = this.getAttribute('data-section') || this.getAttribute('data-section-link');
+          showSection(sectionId);
+          history.pushState(null, null, `#${sectionId}`);
+        });
+      });
+      
+      // Initialize with about section active
+      if (!window.location.hash) {
+        showSection('about');
+      } else {
+        const hash = window.location.hash.substring(1);
+        if (hash && document.getElementById(hash)) {
+          showSection(hash);
+        }
+      }
+      
+      // Handle hash changes
+      window.addEventListener('hashchange', function() {
+        const hash = window.location.hash.substring(1);
+        if (hash && document.getElementById(hash)) {
+          showSection(hash);
+        }
+      });
+    });
+  </script>
 </body>
 </html>
